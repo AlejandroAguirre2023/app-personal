@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido a mi sitio</title>
+</head>
+<body background="{% static 'img/background.jpg' %}" style="background-size: cover;">
+    <main>
+        <div style="text-Align:center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+         <h1>Sitio de Alejandro Aguirre</h1>
+         <h2>Este sitio fue creado con la ayuda de:</h2>
+        </div>
+        <figure>
+            <a href = "https://www.freecodecamp.org/"><img src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg" alt="FreeCodeCamp logo" style="width:300px; height:auto; margin-left: 5%;"></a>
+            <figcaption style="margin-left: 13%;">FreeCodeCamp</figcaption>
+            <a href = "https://djangoforbeginners.com/"><img src="https://d33wubrfki0l68.cloudfront.net/245b15b6d5d2a3bfbd0bdc70d35cca3f3007957e/857c8/assets/images/dfb_cover_42.jpg" alt="Django for begginers cover" style="width:300px; height:auto; margin-left: 70%; margin-top: -225px"></a>
+            <figcaption style="margin-left: 76%;">Django for begginers</figcaption>
+            <a href = "https://chat.openai.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT_logo" style="width:300px; height:auto; margin-left: 35%; margin-top: -410%;"></a>
+            <figcaption style="margin-left: 45%; margin-top: -320px">ChatGPT</figcaption>
+        </figure>
+        <div style="height: 200px; display: flex; align-items: flex-end;">
+            <h2 style="vertical-align: bottom;">Como contactarme:</h2>
+            <ul>
+                <li><a href="https://github.com/AlejandroAguirre2023">Mi cuenta de Github</a></li>
+                <li>Mi correo: Alaguirre@unal.edu.co</li>
+                <li><a class="nav-link" href="{% url 'No' %}">Mi dirección ip</a>
+                </li>
+          </div>
+    </main>
+</body>
+</html>
